@@ -1,0 +1,38 @@
+{
+  "name": "amper-ui",
+  "version": "1.0.0",
+  "description": "Useful Ampersand UI components",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "test": "mocha -r ts-node/register test/**/*-test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ampersandtech/amper-ui.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Ampersand Technologies, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ampersandtech/amper-ui/issues"
+  },
+  "homepage": "https://github.com/ampersandtech/amper-ui#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "amper-utils": "git+ssh://git@github.com/ampersandtech/amper-utils.git"
+  },
+  "peerDependencies": {
+    "react": "~16.0.0"
+  }
+}
